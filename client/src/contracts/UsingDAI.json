@@ -1,0 +1,504 @@
+{
+  "contractName": "UsingDAI",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_daiAddress",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "daiInstance",
+      "outputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_daiAddress\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"daiInstance\",\"outputs\":[{\"internalType\":\"contract IERC20\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/AnshuJalan/Documents/Chainrunner/newton/contracts/daiContracts/UsingDAI.sol\":\"UsingDAI\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/AnshuJalan/Documents/Chainrunner/newton/contracts/daiContracts/DaiERC.sol\":{\"keccak256\":\"0x57bfc5a4c93f020e6f27d037c4b81cde85c536a4f88f1affe73372834c5ce27d\",\"urls\":[\"bzz-raw://b1af70cd039c21a89b50dd14b05ee7df7d9777cac3516ff6b1028c30db36d8a9\",\"dweb:/ipfs/QmRas8KFLpE6NW5FRribETf7G3rZ9GAU3omTPpT9RBV9qh\"]},\"/C/Users/AnshuJalan/Documents/Chainrunner/newton/contracts/daiContracts/UsingDAI.sol\":{\"keccak256\":\"0x179b79aef608600f9fbb4e0a88f3a44a965c74cab5600fc27070a4108d43f9c4\",\"urls\":[\"bzz-raw://dd0c5c54c2fb8222d090cf30638f7bf2ee77063175418384cca1024ab4f4b57a\",\"dweb:/ipfs/QmT4Nxx27dFvvB8h9Y672vXCCJE4N6nNe2ou6sNLLnhAtc\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516101623803806101628339818101604052602081101561003357600080fd5b8101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505060cf806100936000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063b4c42f3714602d575b600080fd5b60336075565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a72315820aaf27080cb688086d37bbcb7591577c1b4deedab36048cd358190409df4a441a64736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063b4c42f3714602d575b600080fd5b60336075565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a72315820aaf27080cb688086d37bbcb7591577c1b4deedab36048cd358190409df4a441a64736f6c63430005100032",
+  "sourceMap": "96:162:4:-;;;164:91;8:9:-1;5:2;;;30:1;27;20:12;5:2;164:91:4;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;164:91:4;;;;;;;;;;;;;;;;235:11;214;;:33;;;;;;;;;;;;;;;;;;164:91;96:162;;;;;;",
+  "deployedSourceMap": "96:162:4:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;96:162:4;;;;;;;;;;;;;;;;;;;126:25;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "//SPDX-License-Identifier: MIT\r\npragma solidity >= 0.4.22 < 0.7.0;\r\n\r\nimport './DaiERC.sol';\r\n\r\ncontract UsingDAI{\r\n    \r\n    IERC20 public daiInstance;\r\n    \r\n    constructor(address _daiAddress) public{\r\n        daiInstance = IERC20(_daiAddress);\r\n    }\r\n}\r\n",
+  "sourcePath": "C:\\Users\\AnshuJalan\\Documents\\Chainrunner\\newton\\contracts\\daiContracts\\UsingDAI.sol",
+  "ast": {
+    "absolutePath": "/C/Users/AnshuJalan/Documents/Chainrunner/newton/contracts/daiContracts/UsingDAI.sol",
+    "exportedSymbols": {
+      "UsingDAI": [
+        1863
+      ]
+    },
+    "id": 1864,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1847,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:34:4"
+      },
+      {
+        "absolutePath": "/C/Users/AnshuJalan/Documents/Chainrunner/newton/contracts/daiContracts/DaiERC.sol",
+        "file": "./DaiERC.sol",
+        "id": 1848,
+        "nodeType": "ImportDirective",
+        "scope": 1864,
+        "sourceUnit": 1846,
+        "src": "70:22:4",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1863,
+        "linearizedBaseContracts": [
+          1863
+        ],
+        "name": "UsingDAI",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 1850,
+            "name": "daiInstance",
+            "nodeType": "VariableDeclaration",
+            "scope": 1863,
+            "src": "126:25:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IERC20_$1845",
+              "typeString": "contract IERC20"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 1849,
+              "name": "IERC20",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1845,
+              "src": "126:6:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IERC20_$1845",
+                "typeString": "contract IERC20"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1861,
+              "nodeType": "Block",
+              "src": "203:52:4",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1859,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 1855,
+                      "name": "daiInstance",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1850,
+                      "src": "214:11:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IERC20_$1845",
+                        "typeString": "contract IERC20"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 1857,
+                          "name": "_daiAddress",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1852,
+                          "src": "235:11:4",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 1856,
+                        "name": "IERC20",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1845,
+                        "src": "228:6:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_IERC20_$1845_$",
+                          "typeString": "type(contract IERC20)"
+                        }
+                      },
+                      "id": 1858,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "228:19:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IERC20_$1845",
+                        "typeString": "contract IERC20"
+                      }
+                    },
+                    "src": "214:33:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IERC20_$1845",
+                      "typeString": "contract IERC20"
+                    }
+                  },
+                  "id": 1860,
+                  "nodeType": "ExpressionStatement",
+                  "src": "214:33:4"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1862,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1853,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1852,
+                  "name": "_daiAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1862,
+                  "src": "176:19:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1851,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "176:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "175:21:4"
+            },
+            "returnParameters": {
+              "id": 1854,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "203:0:4"
+            },
+            "scope": 1863,
+            "src": "164:91:4",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1864,
+        "src": "96:162:4"
+      }
+    ],
+    "src": "32:228:4"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/AnshuJalan/Documents/Chainrunner/newton/contracts/daiContracts/UsingDAI.sol",
+    "exportedSymbols": {
+      "UsingDAI": [
+        1863
+      ]
+    },
+    "id": 1864,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1847,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:34:4"
+      },
+      {
+        "absolutePath": "/C/Users/AnshuJalan/Documents/Chainrunner/newton/contracts/daiContracts/DaiERC.sol",
+        "file": "./DaiERC.sol",
+        "id": 1848,
+        "nodeType": "ImportDirective",
+        "scope": 1864,
+        "sourceUnit": 1846,
+        "src": "70:22:4",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1863,
+        "linearizedBaseContracts": [
+          1863
+        ],
+        "name": "UsingDAI",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 1850,
+            "name": "daiInstance",
+            "nodeType": "VariableDeclaration",
+            "scope": 1863,
+            "src": "126:25:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IERC20_$1845",
+              "typeString": "contract IERC20"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 1849,
+              "name": "IERC20",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1845,
+              "src": "126:6:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IERC20_$1845",
+                "typeString": "contract IERC20"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 1861,
+              "nodeType": "Block",
+              "src": "203:52:4",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 1859,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 1855,
+                      "name": "daiInstance",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1850,
+                      "src": "214:11:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IERC20_$1845",
+                        "typeString": "contract IERC20"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 1857,
+                          "name": "_daiAddress",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 1852,
+                          "src": "235:11:4",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 1856,
+                        "name": "IERC20",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1845,
+                        "src": "228:6:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_IERC20_$1845_$",
+                          "typeString": "type(contract IERC20)"
+                        }
+                      },
+                      "id": 1858,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "228:19:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IERC20_$1845",
+                        "typeString": "contract IERC20"
+                      }
+                    },
+                    "src": "214:33:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IERC20_$1845",
+                      "typeString": "contract IERC20"
+                    }
+                  },
+                  "id": 1860,
+                  "nodeType": "ExpressionStatement",
+                  "src": "214:33:4"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1862,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1853,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1852,
+                  "name": "_daiAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1862,
+                  "src": "176:19:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1851,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "176:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "175:21:4"
+            },
+            "returnParameters": {
+              "id": 1854,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "203:0:4"
+            },
+            "scope": 1863,
+            "src": "164:91:4",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1864,
+        "src": "96:162:4"
+      }
+    ],
+    "src": "32:228:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.0",
+  "updatedAt": "2020-06-28T09:59:51.708Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
