@@ -17,7 +17,7 @@ class NewOrder extends Component {
     activeGreen: 'green-box col-sm-6',
     activeRed: 'col-sm-6',
     buttonColor: 'green-bg',
-    buttonText: 'BUY',
+    buttonText: 'PLACE BUY ORDER',
     showType: false,
     selectedOption: 'call',
     position: 'long',

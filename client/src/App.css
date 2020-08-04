@@ -254,7 +254,7 @@ table th {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 3.5rem !important;
+  padding-left: 31px !important;
 }
 
 .open-header {
