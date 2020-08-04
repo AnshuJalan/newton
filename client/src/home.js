@@ -12,7 +12,7 @@ class Home extends Component {
               <a href="/faucet" class="text-secondary nav-link">Faucet (Test-only)</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="text-secondary nav-link">Demo</a>
+              <a href="https://www.youtube.com/watch?v=iF4SL0_LibE&t=27s" class="text-secondary nav-link">Demo</a>
             </li>
             <li class="nav-item">
               <a href="https://github.com/AnshuJalan/newton" class="text-secondary nav-link">Github</a>

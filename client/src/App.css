@@ -1,7 +1,8 @@
 /*--HTML and BODY--*/
-body, html{
+body,
+html {
   min-height: 100%;
-  background-color: #000000!important;
+  background-color: #000000 !important;
   font-family: 'Roboto', sans-serif !important;
   margin: 0px;
 }
@@ -10,7 +11,7 @@ body, html{
   height: 100vh;
 }
 
-.custom-row-main{
+.custom-row-main {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   height: 100vh;
@@ -18,11 +19,11 @@ body, html{
   gap: 8px;
 }
 
-.custom-row-main > div{
+.custom-row-main > div {
   border-radius: 5px;
 }
 
-.home{
+.home {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -34,38 +35,38 @@ body, html{
 }
 
 /*GRID ITEMS*/
-.nav-custom{
+.nav-custom {
   grid-row: 1 / 3;
   grid-column: 1 / 4;
   display: flex;
   align-items: center;
 }
 
-.market-val{
+.market-val {
   grid-row: 3 / 7;
   grid-column: 1;
   display: flex;
   align-items: center;
 }
 
-.new-order{
+.new-order {
   grid-row: 7 / 13;
   grid-column: 1;
 }
 
-.graph{
+.graph {
   grid-column: 2;
   grid-row: 3 / 8;
   display: flex;
   align-items: center;
 }
 
-.open-orders{
+.open-orders {
   grid-column: 2;
   grid-row: 8 / 13;
 }
 
-.wallet{
+.wallet {
   grid-column: 3;
   grid-row: 3 / 7;
 }
@@ -145,16 +146,16 @@ body, html{
   }
 } */
 
-.wallet > table{
+.wallet > table {
   height: calc(100% - 50px);
 }
 
-.your-orders{
+.your-orders {
   grid-column: 3;
   grid-row: 7 / 13;
 }
 
-td{
+td {
   padding: 5px;
 }
 
@@ -165,49 +166,49 @@ table th {
   background-color: #1b1b1b;
 }
 
-@media screen and (max-height: 800px){
-  .orders-bar{
+@media screen and (max-height: 800px) {
+  .orders-bar {
     overflow-y: auto;
     max-height: 200px;
   }
 
-  .y-orders-bar{
+  .y-orders-bar {
     overflow-y: auto;
     max-height: 360px;
   }
 }
-@media screen and (min-height: 800px){
-  .orders-bar{
+@media screen and (min-height: 800px) {
+  .orders-bar {
     overflow-y: auto;
     max-height: 330px;
   }
 
-  .y-orders-bar{
+  .y-orders-bar {
     overflow-y: auto;
     max-height: 530px;
   }
 }
 
-.orders-bar > table{
+.orders-bar > table {
   width: 100%;
   table-layout: fixed;
   font-size: 16px;
 }
 
-.y-orders-bar > table{
+.y-orders-bar > table {
   width: 100%;
   table-layout: fixed;
   font-size: 16px;
 }
 
-.order-row{
+.order-row {
   font-size: 15px;
   color: #ffffffe3;
   border-bottom: #ffffff10 1px solid;
   padding-top: 5px;
 }
 
-.order-row > td:first-child{
+.order-row > td:first-child {
   font-size: 14px;
 }
 
@@ -216,52 +217,52 @@ table th {
   text-decoration: underline;
 }
 
-.transaction-table > tr > td:first-child{
+.transaction-table > tr > td:first-child {
   color: #ffffff80;
 }
 
 ::-webkit-scrollbar {
-  width: 8px;               /* width of the entire scrollbar */
+  width: 8px; /* width of the entire scrollbar */
 }
 ::-webkit-scrollbar-track {
   background: #00000080;
-  border-radius: 20px;      /* color of the tracking area */
+  border-radius: 20px; /* color of the tracking area */
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #24242485;    /* color of the scroll thumb */
-  border-radius: 20px; 
-  border: 2px solid #00000080;     /* roundness of the scroll thumb */
+  background-color: #24242485; /* color of the scroll thumb */
+  border-radius: 20px;
+  border: 2px solid #00000080; /* roundness of the scroll thumb */
 }
 
-.img-col{
+.img-col {
   display: flex;
   justify-content: flex-end;
 }
 
-.title{
+.title {
   color: white;
   font-size: 2.5em;
   font-weight: 700;
 }
 
-.title-head{
+.title-head {
   font-weight: 600;
   color: #5cb85b;
 }
 
-.title-col{
+.title-col {
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  padding-left: 3.5rem!important;
+  justify-content: center;
+  padding-left: 3.5rem !important;
 }
 
-.open-header{
+.open-header {
   font-weight: 400;
   font-size: 12px;
 }
 
-.wallet-add{
+.wallet-add {
   background: #242424;
   padding: 7.5px;
   border: 1px solid #000;
@@ -270,7 +271,7 @@ table th {
   margin-right: 15px;
 }
 
-.loader{
+.loader {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -279,64 +280,63 @@ table th {
 }
 
 /*--BACKGROUND--*/
-.sec-bg{
+.sec-bg {
   background-color: #1b1b1b;
 }
 
-.head-bg{
-  background-color: #242424!important;
-  border: none!important;
-  border-radius: 0%!important;
+.head-bg {
+  background-color: #242424 !important;
+  border: none !important;
+  border-radius: 0% !important;
 }
 
-.light-white{
+.light-white {
   color: #ffffff20;
 }
 
-.close{
-  color: white!important;
+.close {
+  color: white !important;
 }
 
-.text-format{
+.text-format {
   font-weight: bold;
   color: white;
 }
 
-.green-bg{
-  background: #08921C!important;
+.green-bg {
+  background: #08921c !important;
 }
-.red-bg{
-  background: #9D0911!important;
+.red-bg {
+  background: #9d0911 !important;
 }
 
 /*--NAVBAR--*/
-.nav-brand{
+.nav-brand {
   font-family: 'Russo One', sans-serif;
-  font-size: 1.75rem!important;
+  font-size: 1.75rem !important;
   margin-left: 15px;
 }
 
-.nav-brand:hover{
+.nav-brand:hover {
   text-decoration: none;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-family: 'Russo One', sans-serif;
-  font-size: 2rem!important;
+  font-size: 2rem !important;
   color: white;
 }
 
-.navbar-brand:hover{
+.navbar-brand:hover {
   color: white;
 }
 
-.navbar{
+.navbar {
   width: 100%;
-  padding-bottom: 0!important;
-  position: absolute!important;
+  padding-bottom: 0 !important;
+  position: absolute !important;
   z-index: 1;
 }
-
 
 /*--INPUTS--*/
 
@@ -346,58 +346,58 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type=number] {
+input[type='number'] {
   -moz-appearance: textfield;
 }
 
-input, select{
-  background: #242424!important;
-  border: 1px solid #ffffff20!important;
-  color: white!important;
+input,
+select {
+  background: #242424 !important;
+  border: 1px solid #ffffff20 !important;
+  color: white !important;
 }
 
-select:disabled{
-  color: #ffffff20!important;
-  background: #24242450!important;
+select:disabled {
+  color: #ffffff20 !important;
+  background: #24242450 !important;
 }
 
-label{
-  margin-bottom: 0!important;
+label {
+  margin-bottom: 0 !important;
   font-weight: 700;
   font-size: 12px;
   color: #ffffff80;
 }
 
-::placeholder{
-  color: #ffffff20!important;
+::placeholder {
+  color: #ffffff20 !important;
 }
 
-textarea:hover, 
-input:hover, 
-textarea:active, 
-input:active, 
-textarea:focus, 
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
 input:focus,
 button:focus,
 button:active,
 button:hover,
 label:focus,
 .btn:active,
-.btn.active
-{
-    outline:0px !important;
-    -webkit-appearance:none;
-    box-shadow: none !important;
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
 }
 
-.btn-trade{
+.btn-trade {
   width: 40%;
-  font-weight: 900!important;
-  border-radius: 50px!important;
+  font-weight: 900 !important;
+  border-radius: 50px !important;
   margin-top: 15px;
 }
 
-.input-box-header{
+.input-box-header {
   padding: 10px 0px 10px 0px;
   background: #242424;
   color: #ffffff80;
@@ -406,52 +406,52 @@ label:focus,
 }
 
 /*--FUNCTIONAL--*/
-.option-select{
-  background-color: transparent!important;
-  border: none!important;
+.option-select {
+  background-color: transparent !important;
+  border: none !important;
   color: white;
-  background: #1b1b1b!important;
+  background: #1b1b1b !important;
   outline: none;
   margin-top: 2px;
   font-weight: 700;
 }
 
-.option-select-top{
-  background-color: transparent!important;
-  border: none!important;
+.option-select-top {
+  background-color: transparent !important;
+  border: none !important;
   color: white;
-  background: #242424!important;
+  background: #242424 !important;
   outline: none;
   margin-top: 2px;
   font-weight: 700;
 }
 
-.green-box{
-  background: #08921C ;
+.green-box {
+  background: #08921c;
   border-radius: 5px;
   color: white;
 }
 
-.red-box{
-  background: #9D0911 ;
+.red-box {
+  background: #9d0911;
   border-radius: 5px;
   color: white;
 }
 
 /*--ANIMATIONS--*/
 .fade-in {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 0.3s;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.3s;
 }
 
 @keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

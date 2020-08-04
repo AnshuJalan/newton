@@ -9,8 +9,6 @@ contract CallOption is UsingDAI, UsingPriceFeed {
 
     uint256 public uniqueId;
 
-    address owner;
-
     enum POSITION {LONG, SHORT}
 
     /*
@@ -46,13 +44,12 @@ contract CallOption is UsingDAI, UsingPriceFeed {
         UsingPriceFeed(_tellorAddress)
     {
         uniqueId = 1; //Initial value
-        owner = msg.sender;
     }
 
     /*
      * @notice Creates a new call option order for the Long/Buy position
-     * @dev Must be preceded by a approve call to DAI token contract, during implementation
-     * @dev Short party is initially set to 0 address
+     * @dev Must be preceded by an approve call to DAI token contract, during implementation
+     * @dev Short party is initially set to 0x address
      * @param _quantity represents the amount of ether underlying the option
      * @param _cost is representing the bid amount for premium
      */
